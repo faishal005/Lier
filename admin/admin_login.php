@@ -21,9 +21,7 @@ session_start();
         }else{
          $message[] = 'incorrect username or password!';
       }
-
    }
-
 ?>
 
 <!DOCTYPE html>

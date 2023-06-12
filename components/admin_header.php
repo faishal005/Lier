@@ -1,20 +1,33 @@
+<?php
+        if(isset($message)){
+            foreach($message as $message){
+                echo '
+                <div class="message">
+                    <span>'.$message.'</span>
+                    <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+                </div>
+                ';
+            }
+        }
+    ?>
+
 <header class="header">
 
-<section>
-    <a href="dashboard.php" class="logo" >Admin <span>Panel</span></a>
+<section class="flex">
+<a href="../admin/dashboard.php" class="logo" >Admin <span>Panel</span></a>
 
 <nav class="navbar">
     <a href="../admin/dashboard.php">home</a> 
     <a href="../admin/products.php">products</a> 
     <a href="../admin/placed_orders.php">orders</a>
-    <a href="../admin/admin_accounts.php">admin_accounts</a>
-    <a href="../admin/users_accounts.php">users_accounts</a>
+    <a href="../admin/admin_accounts.php">admin</a>
+    <a href="../admin/users_accounts.php">users</a>
     <a href="../admin/messages.php">messages</a> 
 </nav>
 
 <div class="icons">
-    <div id="menu-btn" class="fas fa-bars"></div>
-    <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
 </div>
 
 <div class="profile">
@@ -30,7 +43,7 @@
         <a href="../admin/register_admin.php" class="option-btn"> register </a>
     </div>
     <div class="flex-btn" >
-        <a href="../components/admin_logout.php" class="delete-btn"> logout </a>
+        <a href="../components/admin_logout.php" onclick="return confirm('sure wanna logout?');" class="delete-btn"> logout </a>
 </div>
 
 
