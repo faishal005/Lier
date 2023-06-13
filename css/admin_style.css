@@ -301,6 +301,42 @@ section{
     margin:1rem 0;
 }
 
+.add-products form{
+    max-width: 70rem;
+    margin: 0 auto;   
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    border-radius: .5rem;
+    padding:2rem;
+}
+
+
+.add-products form .flex{
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+}
+ 
+.add-products form .flex .inputBox{
+    flex:1 1 30rem;
+} 
+ 
+.add-products form .flex .inputBox .box{
+    background-color: var(--light-bg);
+    border: var(--border);
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
+.add-products form .flex .inputBox span{
+    font-size: 2rem;
+    color: var(--light-color);
+}
 
 
 @media(max-width:991px){
