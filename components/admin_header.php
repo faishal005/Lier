@@ -39,7 +39,6 @@
     <p><?=$fetch_profile['name'];?></p>
     <a href="../admin/update_profile.php" class="btn">update profile</a>
     <div class="flex-btn" >
-        <a href="../admin/admin_login.php" class="option-btn"> login </a>
         <a href="../admin/register_admin.php" class="option-btn"> register </a>
     </div>
     <div class="flex-btn" >
