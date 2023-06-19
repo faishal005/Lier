@@ -59,11 +59,12 @@ if(!isset($admin_id)){
         <?php
             $total_completes =0;
             $select_completes = $conn -> prepare ("SELECT * FROM `orders` WHERE payment_status = ?");
-            $select_completes-> execute(['pending']);
+            $select_completes-> execute(['completed']);
+            if($select_completes->rowCount() > 0){
             while($fetch_completes = $select_completes -> fetch (PDO::FETCH_ASSOC)){
-                $total_completes += $fetch_pending ['total_price'];
-                
+                $total_completes += $fetch_pending ['total_price'];                
             }
+        }
         ?>
             <h3><span>$</span><?$total_completes; ?><span>/-</span> </h3>
             <p>total completes</p>
