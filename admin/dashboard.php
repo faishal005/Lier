@@ -5,9 +5,11 @@ include '../components/connect.php';
 session_start();
 
 $admin_id = $_SESSION['admin_id'];
+
 if(!isset($admin_id)){
     header('location:admin_login.php');
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +42,7 @@ if(!isset($admin_id)){
         </div>
 
         <div class="box">
-         <?php
+        <?php
             $total_pendings = 0;
             $select_pendings = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
             $select_pendings->execute(['pending']);
@@ -62,12 +64,12 @@ if(!isset($admin_id)){
             $select_completes-> execute(['completed']);
             if($select_completes->rowCount() > 0){
             while($fetch_completes = $select_completes -> fetch (PDO::FETCH_ASSOC)){
-                $total_completes += $fetch_pending ['total_price'];                
+                $total_completes += $fetch_completes['total_price'];                
             }
         }
         ?>
-            <h3><span>$</span><?$total_completes; ?><span>/-</span> </h3>
-            <p>total completes</p>
+            <h3><span>$</span><?= $total_completes; ?><span>/-</span> </h3>
+            <p>completed orders</p>
             <a href="placed_orders.php" class="btn">see orders</a>
         </div>
 
