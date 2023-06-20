@@ -14,7 +14,7 @@
 <header class="header">
 
 <section class="flex">
-<a href="home.php" class="logo" ><span>S</span>hopie</a>
+<a href="home.php" class="logo" ><span>T</span>oko Kita</a>
 
 <nav class="navbar">
     <a href="home.php">home</a> 

@@ -16,7 +16,7 @@
         <div class="box">
             <h3>Contact info</h3>
             <a href="tel:1234567890"><i class="fas fa-angle-phone"></i>+62341123412</a>
-            <a href="mailto:shopie@gmail.com"><i class="fas fa-envelope"></i>shopie@gmail.com</a>
+            <a href="mailto:tokokita@gmail.com"><i class="fas fa-envelope"></i>tokokita@gmail.com</a>
             <a href="#"><i class="fas fa-map-marker-alt"></i>Malang, Indonesia.</a>
         </div>
         <div class="box">
@@ -27,5 +27,5 @@
             <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
             </div>
     </section>
-    <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span>Shopie</span> | all rights reserved!</div>
+    <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span>Toko Kita</span> | all rights reserved!</div>
 </footer>
