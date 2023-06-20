@@ -542,35 +542,9 @@ section{
 .accounts .box-container .box p span{
     color:var(--main-color);
 }
- 
-.contacts .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 33rem);
-    gap:1.5rem;
-    align-items: flex-start;
-    justify-content: center;
-}
- 
- .contacts .box-container .box{
-    padding:2rem;
-    padding-top: 1rem;
-    border-radius: .5rem;
-    border:var(--border);
-    background-color: var(--white);
-    box-shadow: var(--box-shadow);
-}
- 
-.contacts .box-container .box p{
-    line-height: 1.5;
-    font-size: 2rem;
-    color:var(--light-color);
-    margin:1rem 0;
-}
- 
-.contacts .box-container .box p span{
-    color:var(--main-color);
-}
- 
+
+
+
 
 
 
